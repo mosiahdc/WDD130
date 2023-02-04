@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Radio+Canada:wght@300&family=Varela+Round&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +9,7 @@ nav a {
     text-align: center;
     color: #ffffff;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1,
@@ -28,6 +31,10 @@ section {
 
 body {
     background-color: #FFFFFF;
+    font-family: Varela Round, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -41,15 +48,19 @@ nav a:hover {
 
 .book,
 .join {
-    background-color: #ffffff;
-    color: #F77F00;
+    background-color: #4E9101;
+    color: #FFFFFF;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover,
 .join:hover {
-    background-color: #4E9101;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #F77F00;
 }
 
 #background {
@@ -58,19 +69,26 @@ nav a:hover {
 
 .msg {
     background-color: #ffffff;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
-    color: #FFFFFF;
+    font-family: "Radio Canada";
+    color: #0E5C90;
 }
 
 .msg p {
-    color: #FFFFFF;
+    color: #0E5C90;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #E9E7E3;
     color: #4E9101;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -90,8 +108,19 @@ footer p:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .home-title {
+    font-family: "Radio Canada", sans-serif;
+    font-size: 2em;
     color: #F77F00;
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 0;
 }
 
 h4 {
@@ -104,8 +133,27 @@ h4 {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #4E9101;
+}
+
+main section img {
+    box-sizing: border-box;
 }
