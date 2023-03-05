@@ -36,6 +36,11 @@
     width: 100%;
 }
 
+#hero-img-faq {
+    width: 100%;
+    padding: 0 0 100px 0;
+}
+
 .button-box {
     text-align: center;
 }
@@ -61,7 +66,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 150px auto;
-    background: rgba(14, 92, 144, 0.3)
+    background: rgba(14, 92, 144, 0.3);
 }
 
 nav {
@@ -153,6 +158,12 @@ footer .social img {
     padding-top: 15px;
 }
 
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
 .home-title {
     font-family: "Radio Canada", sans-serif;
     font-size: 2em;
@@ -160,8 +171,94 @@ footer .social img {
     margin-top: 10px;
 }
 
-h2 {
-    margin: 0;
+#hero-msg-faq {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 200px;
+    margin-left: -160px;
+
+}
+
+.faq-title {
+    font-family: "Radio Canada", sans-serif;
+    font-size: 3.5em;
+    color: #E9E7E3;
+    background: rgba(247, 127, 0, 0.7);
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.faq-grid h1 {
+    font-family: "Radio Canada", sans-serif;
+    font-size: 1.7em;
+    grid-column: 2/12;
+    margin-top: -80px;
+    color: #0E5C90;
+}
+
+.faq-grid h2 {
+    font-family: "Radio Canada", sans-serif;
+    font-size: 1.7em;
+    grid-column: 2/12;
+    margin-top: -80px;
+    color: #0E5C90;
+}
+
+
+.more-question {
+    margin-top: 100px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    font-family: "Radio Canada", sans-serif;
+    background-color: #4E9101;
+    color: #E9E7E3;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: #19A0E9;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    background-color: white;
+    color: #F77F00;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: justify;
+    font-size: .8em;
+    font-family: Varela Round, Helvetica;
+}
+
+.collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 10px;
+    color: #E9E7E3;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.collapsible-grid {
+    grid-column: 2/12;
 }
 
 h4 {
@@ -231,6 +328,11 @@ h4 {
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 main section img {
