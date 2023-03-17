@@ -346,7 +346,7 @@ form {
     border-radius: 1em;
 }
 
-ul {
+.contact-form>ul {
     list-style: none;
     padding: 0;
     margin: 0;
